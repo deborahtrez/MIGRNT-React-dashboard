@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './index.css'
+import { BoardContext } from './BoardContext'
 
 class Board extends Component {
     constructor(){
@@ -65,16 +66,21 @@ class Board extends Component {
         this.setState({milkQuantity: this.state.milkQuantity - 1})
     }
 
+    static contextType = BoardContext
 
     render() { 
+        const {brightTheme, lightMode, darkMode} = this.context 
+        const mainTheme = brightTheme ? lightMode : darkMode
+
         return ( 
             <div >
                 <div className="container">
                     <div className="row">
-                        <div className="col col-sm-4">
+                        <div className="col col-sm-4" style={{backgroundColor:mainTheme.backgroundMode}}>
                             <div className="card shadow  mb-3 rounded" style={{width:300 ,}}>
                                 <div className="card-body">
                                     <h5 className="card-title text-center">The Quantity Of Butter</h5>
+                                    <img src="https://res.cloudinary.com/deborahao/image/upload/v1590220460/close-up-of-block-of-butter-being-sliced-may-raise-cholesterol_vdvl9u.jpg"></img>
                                     <p className="card-text text-center">{this.state.butterQuatity}</p>
                                     <button className="butterButton1" onClick={this.IncreaseButterQuantity}>Update Quantity</button>
                                     <button className="butterButton2" onClick={this.DecreaseButterQuantity}>Delete Value</button>
@@ -85,6 +91,7 @@ class Board extends Component {
                             <div className="card shadow  mb-3 rounded" style={{width:300 ,}}>
                                 <div className="card-body">
                                     <h5 className="card-title text-center">The Price Of Butter</h5>
+                                    <img src="https://res.cloudinary.com/deborahao/image/upload/v1590220460/close-up-of-block-of-butter-being-sliced-may-raise-cholesterol_vdvl9u.jpg"></img>
                                     <p className="card-text text-center">{this.state.butterPrice}</p>
                                     <button className="butterButton1" onClick={this.IncreaseButterPrice}>Update Price</button>
                                     <button className="butterButton2" onClick={this.DecreaseButterPrice}>Delete Value</button>
@@ -95,6 +102,7 @@ class Board extends Component {
                             <div className="card shadow  mb-3 rounded" style={{width:300 ,}}>
                                 <div className="card-body">
                                     <h5 className="card-title text-center">The Quantity Of Crates</h5>
+                                    <img src="https://res.cloudinary.com/deborahao/image/upload/v1590221336/HD_313_e7du9v.jpg"></img>
                                     <p className="card-text text-center">{this.state.sugarCrates}</p>
                                     <button className="butterButton1" onClick={this.IncreaseSugarCrates}>Update Crates</button>
                                     <button className="butterButton2" onClick={this.DecreaseSugarCrates}>Delete Value</button>
@@ -105,6 +113,7 @@ class Board extends Component {
                             <div className="card shadow  mb-3 rounded" style={{width:300 ,}}>
                                 <div className="card-body">
                                     <h5 className="card-title text-center">The Price Of Flour</h5>
+                                    <img src="https://res.cloudinary.com/deborahao/image/upload/c_fill,e_sharpen:1840,h_400,r_40,w_534/v1590221358/SQ-How-to-Make-Homemade-Oat-Flour-Gluten-Free-Vegan-1.5_j4apjg.jpg"></img>
                                     <p className="card-text text-center">{this.state.flourPrice}</p>
                                     <button className="butterButton1" onClick={this.IncreaseflourPrice}>Update Price</button>
                                     <button className="butterButton2" onClick={this.DecreaseflourPrice}>Delete Value</button>
@@ -115,6 +124,7 @@ class Board extends Component {
                             <div className="card shadow  mb-3 rounded" style={{width:300 ,}}>
                                 <div className="card-body">
                                     <h5 className="card-title text-center">The Price Of Milk</h5>
+                                    <img src="https://res.cloudinary.com/deborahao/image/upload/v1590223082/GUEST_b733eb0f-5f2d-44c6-82d2-c7f3845e37d3_zfnopv.jpg"></img>
                                     <p className="card-text text-center">{this.state.milkPrice}</p>
                                     <button className="butterButton1" onClick={this.IncreaseMilkPrice}>Update Price</button>
                                     <button className="butterButton2" onClick={this.DecreaseMilkPrice}>Delete Value</button>
@@ -125,6 +135,7 @@ class Board extends Component {
                             <div className="card shadow  mb-3 rounded" style={{width:300 ,}}>
                                 <div className="card-body">
                                     <h5 className="card-title text-center">The Quantity of milk</h5>
+                                    <img src="https://res.cloudinary.com/deborahao/image/upload/v1590223082/GUEST_b733eb0f-5f2d-44c6-82d2-c7f3845e37d3_zfnopv.jpg"></img>
                                     <p className="card-text text-center">{this.state.milkQuantity}</p>
                                     <button className="butterButton1" onClick={this.IncreaseMilkQuantity}>Update Quantity</button>
                                     <button className="butterButton2" onClick={this.DecreaseMilkQuantity}>Delete Value</button>

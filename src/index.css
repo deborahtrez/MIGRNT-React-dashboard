@@ -4,15 +4,26 @@
 }
 .card{
   margin: 100px 0 0 0;
-  height: 35vh;
+  height: auto;
+}
+img{
+  margin-left: 30%;
+  width:  100px;
+  height: 100px;
+  object-fit: cover;
+
 }
 .butterButton1{
+  background-color: lightseagreen;
+  color: white;
   width: 50%;
   border-radius: 8px;
   height: 40px;
   border: none;
 }
 .butterButton2{
+  background-color: lightseagreen;
+  color: white;
   width: 40%;
   border-radius: 8px;
   height: 40px;
