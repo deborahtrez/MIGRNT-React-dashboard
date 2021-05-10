@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/MIGRNT-React-dashboard/static/css/main.e5412b90.chunk.css",
+    "main.js": "/MIGRNT-React-dashboard/static/js/main.278f1e46.chunk.js",
+    "main.js.map": "/MIGRNT-React-dashboard/static/js/main.278f1e46.chunk.js.map",
+    "runtime-main.js": "/MIGRNT-React-dashboard/static/js/runtime-main.66daeb4b.js",
+    "runtime-main.js.map": "/MIGRNT-React-dashboard/static/js/runtime-main.66daeb4b.js.map",
+    "static/css/2.af3c1da9.chunk.css": "/MIGRNT-React-dashboard/static/css/2.af3c1da9.chunk.css",
+    "static/js/2.d95fe791.chunk.js": "/MIGRNT-React-dashboard/static/js/2.d95fe791.chunk.js",
+    "static/js/2.d95fe791.chunk.js.map": "/MIGRNT-React-dashboard/static/js/2.d95fe791.chunk.js.map",
+    "index.html": "/MIGRNT-React-dashboard/index.html",
+    "precache-manifest.d7d22dea4518e870358a2031beaaf3fb.js": "/MIGRNT-React-dashboard/precache-manifest.d7d22dea4518e870358a2031beaaf3fb.js",
+    "service-worker.js": "/MIGRNT-React-dashboard/service-worker.js",
+    "static/css/2.af3c1da9.chunk.css.map": "/MIGRNT-React-dashboard/static/css/2.af3c1da9.chunk.css.map",
+    "static/css/main.e5412b90.chunk.css.map": "/MIGRNT-React-dashboard/static/css/main.e5412b90.chunk.css.map",
+    "static/js/2.d95fe791.chunk.js.LICENSE.txt": "/MIGRNT-React-dashboard/static/js/2.d95fe791.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.66daeb4b.js",
+    "static/css/2.af3c1da9.chunk.css",
+    "static/js/2.d95fe791.chunk.js",
+    "static/css/main.e5412b90.chunk.css",
+    "static/js/main.278f1e46.chunk.js"
+  ]
+}
